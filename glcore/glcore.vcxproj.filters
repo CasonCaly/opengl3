@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="glclass">
+      <UniqueIdentifier>{e822a9f1-a369-4ee8-84fb-dc75a8395755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew">
+      <UniqueIdentifier>{d1483d6d-c5fe-45f2-88d7-11262e20945e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glfw3">
+      <UniqueIdentifier>{d5698a9d-ce57-408f-a917-64a200a93abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{bec17396-0413-46b9-843e-df2110efce79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glew\include">
+      <UniqueIdentifier>{e846b6e7-5158-40b4-8e0e-78c4e2649d86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glfw3\include">
+      <UniqueIdentifier>{1d479604-3c04-489e-b3f9-bda60f70c5e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glfw3\include\win32">
+      <UniqueIdentifier>{e2068d90-046b-4685-8f94-075c8fc51ae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{5e783809-b195-4ecc-9d9d-5bcef0eb4045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glsurface">
+      <UniqueIdentifier>{7efc4c6a-1197-4093-8858-d523f3a52554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="png">
+      <UniqueIdentifier>{09617c7a-ebb7-4f75-bb85-266f6dcab5a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="png\include">
+      <UniqueIdentifier>{a68d5cfc-e9df-458f-9556-c7e894796573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="png\include\win32">
+      <UniqueIdentifier>{48a6d174-e7de-4457-9464-32ff33498378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{563ad94b-18d0-4c75-a8c9-52d995e590b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib\inlcude">
+      <UniqueIdentifier>{7bc05966-aad3-45af-877e-f8ac48bf7684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="image">
+      <UniqueIdentifier>{596fa035-190e-4781-9386-6b5eabd5f604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg">
+      <UniqueIdentifier>{f98587d8-97db-4331-aae7-2272103fc708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg\include">
+      <UniqueIdentifier>{4ae829cb-d13b-4cb6-965a-53cf0852c7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jpeg\include\win32">
+      <UniqueIdentifier>{64e603f2-ae55-4b2e-9120-cff3ea443af2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glclass\GLApp.cpp">
+      <Filter>glclass</Filter>
+    </ClCompile>
+    <ClCompile Include="glclass\GLAttribute.cpp">
+      <Filter>glclass</Filter>
+    </ClCompile>
+    <ClCompile Include="glclass\GLProgram.cpp">
+      <Filter>glclass</Filter>
+    </ClCompile>
+    <ClCompile Include="glclass\GLShader.cpp">
+      <Filter>glclass</Filter>
+    </ClCompile>
+    <ClCompile Include="glclass\GLUniform.cpp">
+      <Filter>glclass</Filter>
+    </ClCompile>
+    <ClCompile Include="os\Path.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="glclass\GLBuffer.cpp">
+      <Filter>glclass</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLCone.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLSurface.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLSphere.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLMobiusStrip.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLKleinBottle.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLTorus.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLTrefoilKnot.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+    <ClCompile Include="image\GLImage.cpp">
+      <Filter>image</Filter>
+    </ClCompile>
+    <ClCompile Include="glclass\GLTexture.cpp">
+      <Filter>glclass</Filter>
+    </ClCompile>
+    <ClCompile Include="glsurface\GLCube.cpp">
+      <Filter>glsurface</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="glclass\GLApp.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glclass\GLAttribute.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glclass\GLProgram.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glclass\GLShader.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glclass\GLUniform.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\glew.h">
+      <Filter>glew\include</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\glxew.h">
+      <Filter>glew\include</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\wglew.h">
+      <Filter>glew\include</Filter>
+    </ClInclude>
+    <ClInclude Include="glfw3\include\win32\glfw3.h">
+      <Filter>glfw3\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="glfw3\include\win32\glfw3native.h">
+      <Filter>glfw3\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Matrix.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Quaternion.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="math\Vector.hpp">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="os\Path.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="GLCore.h" />
+    <ClInclude Include="glclass\GLBuffer.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glclass\GLGL.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLCone.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLSurface.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="GLInterval.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLSphere.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLMobiusStrip.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLKleinBottle.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLTorus.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLTrefoilKnot.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+    <ClInclude Include="png\include\win32\png.h">
+      <Filter>png\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="png\include\win32\pngconf.h">
+      <Filter>png\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="png\include\win32\pnglibconf.h">
+      <Filter>png\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\include\zconf.h">
+      <Filter>zlib\inlcude</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\include\zlib.h">
+      <Filter>zlib\inlcude</Filter>
+    </ClInclude>
+    <ClInclude Include="image\GLImage.h">
+      <Filter>image</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\include\win32\jconfig.h">
+      <Filter>jpeg\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\include\win32\jmorecfg.h">
+      <Filter>jpeg\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="jpeg\include\win32\jpeglib.h">
+      <Filter>jpeg\include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="glclass\GLTexture.h">
+      <Filter>glclass</Filter>
+    </ClInclude>
+    <ClInclude Include="glsurface\GLCube.h">
+      <Filter>glsurface</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="glclass\GLApp.cpp" />
+    <ClCompile Include="glclass\GLAttribute.cpp" />
+    <ClCompile Include="glclass\GLBuffer.cpp" />
+    <ClCompile Include="glclass\GLProgram.cpp" />
+    <ClCompile Include="glclass\GLShader.cpp" />
+    <ClCompile Include="glclass\GLTexture.cpp" />
+    <ClCompile Include="glclass\GLUniform.cpp" />
+    <ClCompile Include="glsurface\GLCone.cpp" />
+    <ClCompile Include="glsurface\GLCube.cpp" />
+    <ClCompile Include="glsurface\GLKleinBottle.cpp" />
+    <ClCompile Include="glsurface\GLMobiusStrip.cpp" />
+    <ClCompile Include="glsurface\GLSphere.cpp" />
+    <ClCompile Include="glsurface\GLSurface.cpp" />
+    <ClCompile Include="glsurface\GLTorus.cpp" />
+    <ClCompile Include="glsurface\GLTrefoilKnot.cpp" />
+    <ClCompile Include="image\GLImage.cpp" />
+    <ClCompile Include="os\Path.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="glclass\GLApp.h" />
+    <ClInclude Include="glclass\GLAttribute.h" />
+    <ClInclude Include="glclass\GLBuffer.h" />
+    <ClInclude Include="glclass\GLGL.h" />
+    <ClInclude Include="glclass\GLProgram.h" />
+    <ClInclude Include="glclass\GLShader.h" />
+    <ClInclude Include="glclass\GLTexture.h" />
+    <ClInclude Include="glclass\GLUniform.h" />
+    <ClInclude Include="GLCore.h" />
+    <ClInclude Include="glew\include\glew.h" />
+    <ClInclude Include="glew\include\glxew.h" />
+    <ClInclude Include="glew\include\wglew.h" />
+    <ClInclude Include="glfw3\include\win32\glfw3.h" />
+    <ClInclude Include="glfw3\include\win32\glfw3native.h" />
+    <ClInclude Include="GLInterval.h" />
+    <ClInclude Include="glsurface\GLCone.h" />
+    <ClInclude Include="glsurface\GLCube.h" />
+    <ClInclude Include="glsurface\GLKleinBottle.h" />
+    <ClInclude Include="glsurface\GLMobiusStrip.h" />
+    <ClInclude Include="glsurface\GLSphere.h" />
+    <ClInclude Include="glsurface\GLSurface.h" />
+    <ClInclude Include="glsurface\GLTorus.h" />
+    <ClInclude Include="glsurface\GLTrefoilKnot.h" />
+    <ClInclude Include="image\GLImage.h" />
+    <ClInclude Include="jpeg\include\win32\jconfig.h" />
+    <ClInclude Include="jpeg\include\win32\jmorecfg.h" />
+    <ClInclude Include="jpeg\include\win32\jpeglib.h" />
+    <ClInclude Include="math\Matrix.hpp" />
+    <ClInclude Include="math\Quaternion.hpp" />
+    <ClInclude Include="math\Vector.hpp" />
+    <ClInclude Include="os\Path.h" />
+    <ClInclude Include="png\include\win32\png.h" />
+    <ClInclude Include="png\include\win32\pngconf.h" />
+    <ClInclude Include="png\include\win32\pnglibconf.h" />
+    <ClInclude Include="zlib\include\zconf.h" />
+    <ClInclude Include="zlib\include\zlib.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BC28E7F6-E6FD-4CE8-B3E6-752DB9F93916}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>glcore</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;GLCORE_EXPORTS;GL_GLEXT_PROTOTYPES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./;./glew/include;./glfw3/include/win32;./png/include/win32;./zlib/include/win32;./jpeg/include/win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4996;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>./glew/prebuilt;./glfw3/prebuilt/win32;./zlib/prebuilt/win32;./png/prebuilt/win32;./jpeg/prebuilt/win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32.lib;glfw3.lib;opengl32.lib;libpng.lib;libzlib.lib;libjpeg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;GLCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
