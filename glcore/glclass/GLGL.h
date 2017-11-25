@@ -7,6 +7,8 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 #include <OpenGL/glext.h>
+#include <OpenGL/gl3.h>
+#include <glfw3.h>
 #endif
 
 #endif

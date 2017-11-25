@@ -10,6 +10,7 @@
 #include <glew.h>
 #include <wglew.h>
 #endif
+
 #include <glfw3.h>
 #include "GLApp.h"
 #include "os/Path.h"
@@ -161,6 +162,10 @@ void GLApp::initGLApp(const std::string& appName, int width, int height)
     /* Initialize the library */
     if (!glfwInit())
         return ;
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
     
     /* Create a windowed mode window and its OpenGL context */
     g_window = glfwCreateWindow(width, height, appName.c_str(), NULL, NULL);
@@ -191,7 +196,7 @@ void GLApp::initGLApp(const std::string& appName, int width, int height)
 
 void GLApp::initGLApp(const std::string& appName)
 {
-    this->initGLApp(appName, 640, 960);
+    this->initGLApp(appName, 800, 600);
 }
 
 void GLApp::run()
