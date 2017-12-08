@@ -8,8 +8,19 @@
 
 #include "GLAttribute.h"
 
-GLAttribute::GLAttribute(GLuint program, GLuint attribute){
+GLAttribute::GLAttribute()
+{
+    
+}
+
+GLAttribute::GLAttribute(GLuint program, GLuint attribute)
+{
     m_program = program;
+    m_attribute = attribute;
+}
+
+void GLAttribute::init(GLuint attribute)
+{
     m_attribute = attribute;
 }
 

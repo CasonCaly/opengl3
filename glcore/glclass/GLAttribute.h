@@ -21,7 +21,11 @@ class GLCORE GLAttribute{
     
 public:
     
+    GLAttribute();
+    
     GLAttribute(GLuint program, GLuint attribute);
+    
+    void init(GLuint attribute);
     
     void enableVertexAttribArray();
     

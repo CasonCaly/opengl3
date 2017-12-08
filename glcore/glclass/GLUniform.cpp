@@ -21,6 +21,11 @@ void GLUniform::matrix3fv(GLsizei count, GLboolean transpose, const GLfloat *val
 	glUniformMatrix3fv(m_unifrom, count, transpose, value);
 }
 
+void GLUniform::value4f(float v0, float v1, float v2, float v3)
+{
+    glUniform4f(m_unifrom, v0, v1, v2, v3);
+}
+
 void GLUniform::value3f(float v0, float v1, float v2)
 {
 	glUniform3f(m_unifrom, v0, v1, v2);

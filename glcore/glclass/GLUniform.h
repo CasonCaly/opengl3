@@ -27,6 +27,8 @@ public:
     
 	void matrix3fv(GLsizei count, GLboolean transpose, const GLfloat *value);
 
+    void value4f(float v0, float v1, float v2, float v3);
+    
 	void value3f(float v0, float v1, float v2);
 
 	void value2f(float v0, float v1);

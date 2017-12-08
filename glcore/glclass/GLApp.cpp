@@ -150,6 +150,17 @@ static void GLAppMouseScrollCallBack(GLFWwindow* window, double x, double y)
 		g_app->onMouseScroll(x, y);
 }
 
+static void GLAppSizeCallback(GLFWwindow* window, int width, int height)
+{
+    glViewport(0, 0, width, height);
+}
+
+static void  GLAppKeyCallback(GLFWwindow* window,int key, int scancode, int action, int mods)
+{
+    if(g_app)
+        g_app->onKeyPress(key, scancode, action, mods);
+}
+
 GLApp::GLApp()
 {
 	g_app = this;
@@ -184,6 +195,8 @@ void GLApp::initGLApp(const std::string& appName, int width, int height)
     glfwSetCursorPosCallback(g_window, GLAppMouseMoveCallBack);
     glfwSetMouseButtonCallback(g_window, GLAppMouseCallBack);
     glfwSetScrollCallback(g_window, GLAppMouseScrollCallBack);
+    glfwSetFramebufferSizeCallback(g_window, GLAppSizeCallback);
+    glfwSetKeyCallback(g_window, GLAppKeyCallback);
     glfwMakeContextCurrent(g_window);
     
 #if defined(WIN32)
@@ -202,7 +215,9 @@ void GLApp::initGLApp(const std::string& appName)
 void GLApp::run()
 {
 	/* Loop until the user closes the window */
-	while (!glfwWindowShouldClose(g_window)){
+	while (!glfwWindowShouldClose(g_window))
+    {
+        
 		/* Render here */
 		glClear(GL_COLOR_BUFFER_BIT);
 		this->render();
@@ -230,6 +245,11 @@ void GLApp::onTouchEnd(float x, float y){
 void GLApp::onMouseScroll(double x, double y)
 {
 
+}
+
+void GLApp::onKeyPress(int key, int scancode, int action, int mods)
+{
+    
 }
 
 void GLApp::render()

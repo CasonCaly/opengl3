@@ -2,7 +2,43 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:HelloCone/HelloCone.xcodeproj">
+      location = "group:Colors/Colors.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CameraMouseZoom/CameraMouseZoom.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CameraKeyboardDt/CameraKeyboardDt.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CameraCircle/CameraCircle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoordinateSystemsMultiple/CoordinateSystemsMultiple.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoordinateSystemsDepth/CoordinateSystemsDepth.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CoordinateSystems/CoordinateSystems.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Transformations/Transformations.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TexturesCombined/TexturesCombined.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Textures/Textures.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ShadersInterpolation/ShadersInterpolation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ShadersUniform/ShadersUniform.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HelloTriangleIndexed/HelloTriangleIndexed.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:glcore/glcore.xcodeproj">

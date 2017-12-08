@@ -42,7 +42,14 @@ public:
     virtual void onTouchEnd(float x, float y);
     
 	virtual void onMouseScroll(double x, double y);
-
+    /*
+    *  @param[in] key The [keyboard key](@ref keys) that was pressed or released.
+    *  @param[in] scancode The system-specific scancode of the key.
+    *  @param[in] action `GLFW_PRESS`, `GLFW_RELEASE` or `GLFW_REPEAT`.
+    *  @param[in] mods Bit field describing which [modifier keys](@ref mods) were
+    */
+    virtual void onKeyPress(int key, int scancode, int action, int mods);
+    
     virtual void initProgram();
     
 protected:
