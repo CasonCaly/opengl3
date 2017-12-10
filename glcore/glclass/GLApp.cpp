@@ -202,7 +202,7 @@ void GLApp::initGLApp(const std::string& appName, int width, int height)
 #if defined(WIN32)
     ::initGlew();
 #endif
-    
+    //glfwGetFramebufferSize(g_window, &m_width, &m_height);
     this->initProgram();
 
 }

@@ -212,6 +212,48 @@
 		760A978E1FD8314C00AD182B /* vec3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 760A96FC1FD8314C00AD182B /* vec3.hpp */; };
 		760A978F1FD8314C00AD182B /* vec4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 760A96FD1FD8314C00AD182B /* vec4.hpp */; };
 		760A97901FD8314C00AD182B /* vector_relational.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 760A96FE1FD8314C00AD182B /* vector_relational.hpp */; };
+		76DA9C3C1FDD6CAC002E14BA /* Mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C3A1FDD6CAC002E14BA /* Mesh.h */; };
+		76DA9C3E1FDD6D00002E14BA /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C3D1FDD6D00002E14BA /* Model.h */; };
+		76DA9C721FDD71B7002E14BA /* DefaultLogger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C401FDD71B4002E14BA /* DefaultLogger.hpp */; };
+		76DA9C731FDD71B7002E14BA /* matrix4x4.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C411FDD71B4002E14BA /* matrix4x4.h */; };
+		76DA9C741FDD71B7002E14BA /* scene.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C441FDD71B4002E14BA /* scene.h */; };
+		76DA9C761FDD71B7002E14BA /* Importer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C4A1FDD71B5002E14BA /* Importer.hpp */; };
+		76DA9C771FDD71B7002E14BA /* DefaultIOStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C4B1FDD71B5002E14BA /* DefaultIOStream.h */; };
+		76DA9C781FDD71B7002E14BA /* importerdesc.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C4C1FDD71B5002E14BA /* importerdesc.h */; };
+		76DA9C791FDD71B7002E14BA /* quaternion.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C4E1FDD71B5002E14BA /* quaternion.h */; };
+		76DA9C7A1FDD71B7002E14BA /* DefaultIOSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C4F1FDD71B5002E14BA /* DefaultIOSystem.h */; };
+		76DA9C7B1FDD71B7002E14BA /* light.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C501FDD71B5002E14BA /* light.h */; };
+		76DA9C7C1FDD71B7002E14BA /* SceneCombiner.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C511FDD71B5002E14BA /* SceneCombiner.h */; };
+		76DA9C7D1FDD71B7002E14BA /* IOStream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C521FDD71B5002E14BA /* IOStream.hpp */; };
+		76DA9C7E1FDD71B7002E14BA /* IOSystem.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C531FDD71B5002E14BA /* IOSystem.hpp */; };
+		76DA9C7F1FDD71B7002E14BA /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C541FDD71B5002E14BA /* types.h */; };
+		76DA9C801FDD71B7002E14BA /* LogStream.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C551FDD71B5002E14BA /* LogStream.hpp */; };
+		76DA9C811FDD71B7002E14BA /* matrix3x3.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C561FDD71B5002E14BA /* matrix3x3.h */; };
+		76DA9C821FDD71B7002E14BA /* ProgressHandler.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C571FDD71B5002E14BA /* ProgressHandler.hpp */; };
+		76DA9C831FDD71B7002E14BA /* camera.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C581FDD71B6002E14BA /* camera.h */; };
+		76DA9C841FDD71B7002E14BA /* cfileio.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C591FDD71B6002E14BA /* cfileio.h */; };
+		76DA9C851FDD71B7002E14BA /* metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C5A1FDD71B6002E14BA /* metadata.h */; };
+		76DA9C861FDD71B7002E14BA /* Exporter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C5B1FDD71B6002E14BA /* Exporter.hpp */; };
+		76DA9C871FDD71B7002E14BA /* vector3.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C5C1FDD71B6002E14BA /* vector3.h */; };
+		76DA9C881FDD71B7002E14BA /* texture.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C5E1FDD71B6002E14BA /* texture.h */; };
+		76DA9C891FDD71B7002E14BA /* defs.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C5F1FDD71B6002E14BA /* defs.h */; };
+		76DA9C8A1FDD71B7002E14BA /* mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C601FDD71B6002E14BA /* mesh.h */; };
+		76DA9C8B1FDD71B7002E14BA /* poppack1.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C631FDD71B6002E14BA /* poppack1.h */; };
+		76DA9C8C1FDD71B7002E14BA /* pstdint.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C641FDD71B6002E14BA /* pstdint.h */; };
+		76DA9C8D1FDD71B7002E14BA /* pushpack1.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C651FDD71B6002E14BA /* pushpack1.h */; };
+		76DA9C8E1FDD71B7002E14BA /* cexport.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C661FDD71B6002E14BA /* cexport.h */; };
+		76DA9C8F1FDD71B7002E14BA /* material.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C671FDD71B6002E14BA /* material.h */; };
+		76DA9C901FDD71B7002E14BA /* NullLogger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C681FDD71B6002E14BA /* NullLogger.hpp */; };
+		76DA9C911FDD71B7002E14BA /* vector2.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C691FDD71B7002E14BA /* vector2.h */; };
+		76DA9C921FDD71B7002E14BA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C6A1FDD71B7002E14BA /* version.h */; };
+		76DA9C931FDD71B7002E14BA /* postprocess.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C6B1FDD71B7002E14BA /* postprocess.h */; };
+		76DA9C941FDD71B7002E14BA /* Defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C6C1FDD71B7002E14BA /* Defines.h */; };
+		76DA9C951FDD71B7002E14BA /* ai_assert.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C6D1FDD71B7002E14BA /* ai_assert.h */; };
+		76DA9C961FDD71B7002E14BA /* anim.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C6E1FDD71B7002E14BA /* anim.h */; };
+		76DA9C971FDD71B7002E14BA /* color4.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C6F1FDD71B7002E14BA /* color4.h */; };
+		76DA9C981FDD71B7002E14BA /* Logger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C701FDD71B7002E14BA /* Logger.hpp */; };
+		76DA9C991FDD71B7002E14BA /* cimport.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C711FDD71B7002E14BA /* cimport.h */; };
+		76DA9C9B1FDD7203002E14BA /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C9A1FDD7203002E14BA /* config.h */; };
 		76EF892B1FD69C89002E2D52 /* GLVertexArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 76EF89291FD69C89002E2D52 /* GLVertexArray.h */; };
 		76EF892C1FD69C89002E2D52 /* GLVertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76EF892A1FD69C89002E2D52 /* GLVertexArray.cpp */; };
 		76F1FB001FDA806200976D2B /* Camera.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F1FAFE1FDA806200976D2B /* Camera.h */; };
@@ -537,6 +579,55 @@
 		760A96FC1FD8314C00AD182B /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
 		760A96FD1FD8314C00AD182B /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		760A96FE1FD8314C00AD182B /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
+		76DA9C3A1FDD6CAC002E14BA /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		76DA9C3D1FDD6D00002E14BA /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		76DA9C3F1FDD71B4002E14BA /* color4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color4.inl; sourceTree = "<group>"; };
+		76DA9C401FDD71B4002E14BA /* DefaultLogger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DefaultLogger.hpp; sourceTree = "<group>"; };
+		76DA9C411FDD71B4002E14BA /* matrix4x4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix4x4.h; sourceTree = "<group>"; };
+		76DA9C421FDD71B4002E14BA /* matrix4x4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix4x4.inl; sourceTree = "<group>"; };
+		76DA9C431FDD71B4002E14BA /* quaternion.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quaternion.inl; sourceTree = "<group>"; };
+		76DA9C441FDD71B4002E14BA /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scene.h; sourceTree = "<group>"; };
+		76DA9C451FDD71B4002E14BA /* vector2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector2.inl; sourceTree = "<group>"; };
+		76DA9C461FDD71B4002E14BA /* vector3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vector3.inl; sourceTree = "<group>"; };
+		76DA9C4A1FDD71B5002E14BA /* Importer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Importer.hpp; sourceTree = "<group>"; };
+		76DA9C4B1FDD71B5002E14BA /* DefaultIOStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultIOStream.h; sourceTree = "<group>"; };
+		76DA9C4C1FDD71B5002E14BA /* importerdesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = importerdesc.h; sourceTree = "<group>"; };
+		76DA9C4D1FDD71B5002E14BA /* material.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = material.inl; sourceTree = "<group>"; };
+		76DA9C4E1FDD71B5002E14BA /* quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quaternion.h; sourceTree = "<group>"; };
+		76DA9C4F1FDD71B5002E14BA /* DefaultIOSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultIOSystem.h; sourceTree = "<group>"; };
+		76DA9C501FDD71B5002E14BA /* light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = light.h; sourceTree = "<group>"; };
+		76DA9C511FDD71B5002E14BA /* SceneCombiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneCombiner.h; sourceTree = "<group>"; };
+		76DA9C521FDD71B5002E14BA /* IOStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOStream.hpp; sourceTree = "<group>"; };
+		76DA9C531FDD71B5002E14BA /* IOSystem.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = IOSystem.hpp; sourceTree = "<group>"; };
+		76DA9C541FDD71B5002E14BA /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		76DA9C551FDD71B5002E14BA /* LogStream.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LogStream.hpp; sourceTree = "<group>"; };
+		76DA9C561FDD71B5002E14BA /* matrix3x3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix3x3.h; sourceTree = "<group>"; };
+		76DA9C571FDD71B5002E14BA /* ProgressHandler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgressHandler.hpp; sourceTree = "<group>"; };
+		76DA9C581FDD71B6002E14BA /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		76DA9C591FDD71B6002E14BA /* cfileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfileio.h; sourceTree = "<group>"; };
+		76DA9C5A1FDD71B6002E14BA /* metadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metadata.h; sourceTree = "<group>"; };
+		76DA9C5B1FDD71B6002E14BA /* Exporter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Exporter.hpp; sourceTree = "<group>"; };
+		76DA9C5C1FDD71B6002E14BA /* vector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector3.h; sourceTree = "<group>"; };
+		76DA9C5D1FDD71B6002E14BA /* matrix3x3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = matrix3x3.inl; sourceTree = "<group>"; };
+		76DA9C5E1FDD71B6002E14BA /* texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = texture.h; sourceTree = "<group>"; };
+		76DA9C5F1FDD71B6002E14BA /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		76DA9C601FDD71B6002E14BA /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mesh.h; sourceTree = "<group>"; };
+		76DA9C631FDD71B6002E14BA /* poppack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poppack1.h; sourceTree = "<group>"; };
+		76DA9C641FDD71B6002E14BA /* pstdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pstdint.h; sourceTree = "<group>"; };
+		76DA9C651FDD71B6002E14BA /* pushpack1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pushpack1.h; sourceTree = "<group>"; };
+		76DA9C661FDD71B6002E14BA /* cexport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cexport.h; sourceTree = "<group>"; };
+		76DA9C671FDD71B6002E14BA /* material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
+		76DA9C681FDD71B6002E14BA /* NullLogger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NullLogger.hpp; sourceTree = "<group>"; };
+		76DA9C691FDD71B7002E14BA /* vector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector2.h; sourceTree = "<group>"; };
+		76DA9C6A1FDD71B7002E14BA /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		76DA9C6B1FDD71B7002E14BA /* postprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = postprocess.h; sourceTree = "<group>"; };
+		76DA9C6C1FDD71B7002E14BA /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		76DA9C6D1FDD71B7002E14BA /* ai_assert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ai_assert.h; sourceTree = "<group>"; };
+		76DA9C6E1FDD71B7002E14BA /* anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anim.h; sourceTree = "<group>"; };
+		76DA9C6F1FDD71B7002E14BA /* color4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color4.h; sourceTree = "<group>"; };
+		76DA9C701FDD71B7002E14BA /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		76DA9C711FDD71B7002E14BA /* cimport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cimport.h; sourceTree = "<group>"; };
+		76DA9C9A1FDD7203002E14BA /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		76EF89291FD69C89002E2D52 /* GLVertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVertexArray.h; sourceTree = "<group>"; };
 		76EF892A1FD69C89002E2D52 /* GLVertexArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLVertexArray.cpp; sourceTree = "<group>"; };
 		76F1FAFE1FDA806200976D2B /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
@@ -667,6 +758,8 @@
 		55EDBE311EEBD59600850B69 = {
 			isa = PBXGroup;
 			children = (
+				76DA9C381FDD6CAC002E14BA /* mesh */,
+				76DA9BD91FDD6C3C002E14BA /* assimp */,
 				76F1FAFC1FDA806200976D2B /* camera */,
 				760A95F81FD8314C00AD182B /* glm */,
 				55238AFB1F1510130063F89B /* jpeg */,
@@ -1074,6 +1167,77 @@
 			path = simd;
 			sourceTree = "<group>";
 		};
+		76DA9BD91FDD6C3C002E14BA /* assimp */ = {
+			isa = PBXGroup;
+			children = (
+				76DA9C9A1FDD7203002E14BA /* config.h */,
+				76DA9C6D1FDD71B7002E14BA /* ai_assert.h */,
+				76DA9C6E1FDD71B7002E14BA /* anim.h */,
+				76DA9C581FDD71B6002E14BA /* camera.h */,
+				76DA9C661FDD71B6002E14BA /* cexport.h */,
+				76DA9C591FDD71B6002E14BA /* cfileio.h */,
+				76DA9C711FDD71B7002E14BA /* cimport.h */,
+				76DA9C6F1FDD71B7002E14BA /* color4.h */,
+				76DA9C3F1FDD71B4002E14BA /* color4.inl */,
+				76DA9C621FDD71B6002E14BA /* Compiler */,
+				76DA9C4B1FDD71B5002E14BA /* DefaultIOStream.h */,
+				76DA9C4F1FDD71B5002E14BA /* DefaultIOSystem.h */,
+				76DA9C401FDD71B4002E14BA /* DefaultLogger.hpp */,
+				76DA9C6C1FDD71B7002E14BA /* Defines.h */,
+				76DA9C5F1FDD71B6002E14BA /* defs.h */,
+				76DA9C5B1FDD71B6002E14BA /* Exporter.hpp */,
+				76DA9C4A1FDD71B5002E14BA /* Importer.hpp */,
+				76DA9C4C1FDD71B5002E14BA /* importerdesc.h */,
+				76DA9C521FDD71B5002E14BA /* IOStream.hpp */,
+				76DA9C531FDD71B5002E14BA /* IOSystem.hpp */,
+				76DA9C501FDD71B5002E14BA /* light.h */,
+				76DA9C701FDD71B7002E14BA /* Logger.hpp */,
+				76DA9C551FDD71B5002E14BA /* LogStream.hpp */,
+				76DA9C671FDD71B6002E14BA /* material.h */,
+				76DA9C4D1FDD71B5002E14BA /* material.inl */,
+				76DA9C561FDD71B5002E14BA /* matrix3x3.h */,
+				76DA9C5D1FDD71B6002E14BA /* matrix3x3.inl */,
+				76DA9C411FDD71B4002E14BA /* matrix4x4.h */,
+				76DA9C421FDD71B4002E14BA /* matrix4x4.inl */,
+				76DA9C601FDD71B6002E14BA /* mesh.h */,
+				76DA9C5A1FDD71B6002E14BA /* metadata.h */,
+				76DA9C681FDD71B6002E14BA /* NullLogger.hpp */,
+				76DA9C6B1FDD71B7002E14BA /* postprocess.h */,
+				76DA9C571FDD71B5002E14BA /* ProgressHandler.hpp */,
+				76DA9C4E1FDD71B5002E14BA /* quaternion.h */,
+				76DA9C431FDD71B4002E14BA /* quaternion.inl */,
+				76DA9C441FDD71B4002E14BA /* scene.h */,
+				76DA9C511FDD71B5002E14BA /* SceneCombiner.h */,
+				76DA9C5E1FDD71B6002E14BA /* texture.h */,
+				76DA9C541FDD71B5002E14BA /* types.h */,
+				76DA9C691FDD71B7002E14BA /* vector2.h */,
+				76DA9C451FDD71B4002E14BA /* vector2.inl */,
+				76DA9C5C1FDD71B6002E14BA /* vector3.h */,
+				76DA9C461FDD71B4002E14BA /* vector3.inl */,
+				76DA9C6A1FDD71B7002E14BA /* version.h */,
+			);
+			path = assimp;
+			sourceTree = "<group>";
+		};
+		76DA9C381FDD6CAC002E14BA /* mesh */ = {
+			isa = PBXGroup;
+			children = (
+				76DA9C3D1FDD6D00002E14BA /* Model.h */,
+				76DA9C3A1FDD6CAC002E14BA /* Mesh.h */,
+			);
+			path = mesh;
+			sourceTree = "<group>";
+		};
+		76DA9C621FDD71B6002E14BA /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				76DA9C631FDD71B6002E14BA /* poppack1.h */,
+				76DA9C641FDD71B6002E14BA /* pstdint.h */,
+				76DA9C651FDD71B6002E14BA /* pushpack1.h */,
+			);
+			path = Compiler;
+			sourceTree = "<group>";
+		};
 		76F1FAFC1FDA806200976D2B /* camera */ = {
 			isa = PBXGroup;
 			children = (
@@ -1094,15 +1258,18 @@
 				760A97011FD8314C00AD182B /* _fixes.hpp in Headers */,
 				760A97431FD8314C00AD182B /* color_space_YCoCg.hpp in Headers */,
 				760A97661FD8314C00AD182B /* quaternion.hpp in Headers */,
+				76DA9C941FDD71B7002E14BA /* Defines.h in Headers */,
 				760A971B1FD8314C00AD182B /* type_mat3x3.hpp in Headers */,
 				760A97051FD8314C00AD182B /* _vectorize.hpp in Headers */,
 				760A97081FD8314C00AD182B /* func_exponential.hpp in Headers */,
 				760A97771FD8314C00AD182B /* integer.hpp in Headers */,
 				760A975D1FD8314C00AD182B /* norm.hpp in Headers */,
 				760A97441FD8314C00AD182B /* common.hpp in Headers */,
+				76DA9C741FDD71B7002E14BA /* scene.h in Headers */,
 				760A976D1FD8314C00AD182B /* spline.hpp in Headers */,
 				760A97511FD8314C00AD182B /* integer.hpp in Headers */,
 				760A97181FD8314C00AD182B /* type_mat2x3.hpp in Headers */,
+				76DA9C7E1FDD71B7002E14BA /* IOSystem.hpp in Headers */,
 				760A97691FD8314C00AD182B /* rotate_normalized_axis.hpp in Headers */,
 				760A975E1FD8314C00AD182B /* normal.hpp in Headers */,
 				760A97591FD8314C00AD182B /* matrix_operation.hpp in Headers */,
@@ -1113,6 +1280,7 @@
 				760A97641FD8314C00AD182B /* polar_coordinates.hpp in Headers */,
 				760A97261FD8314C00AD182B /* ext.hpp in Headers */,
 				760A97041FD8314C00AD182B /* _swizzle_func.hpp in Headers */,
+				76DA9C951FDD71B7002E14BA /* ai_assert.h in Headers */,
 				760A97891FD8314C00AD182B /* platform.h in Headers */,
 				760A971E1FD8314C00AD182B /* type_mat4x3.hpp in Headers */,
 				760A97161FD8314C00AD182B /* type_mat.hpp in Headers */,
@@ -1120,7 +1288,11 @@
 				55EDBE8B1EEBD5D100850B69 /* Vector.hpp in Headers */,
 				760A972E1FD8314C00AD182B /* functions.hpp in Headers */,
 				760A97491FD8314C00AD182B /* extend.hpp in Headers */,
+				76DA9C7F1FDD71B7002E14BA /* types.h in Headers */,
+				76DA9C981FDD71B7002E14BA /* Logger.hpp in Headers */,
 				760A971D1FD8314C00AD182B /* type_mat4x2.hpp in Headers */,
+				76DA9C7A1FDD71B7002E14BA /* DefaultIOSystem.h in Headers */,
+				76DA9C821FDD71B7002E14BA /* ProgressHandler.hpp in Headers */,
 				760A972A1FD8314C00AD182B /* bitfield.hpp in Headers */,
 				760A97341FD8314C00AD182B /* noise.hpp in Headers */,
 				760A971F1FD8314C00AD182B /* type_mat4x4.hpp in Headers */,
@@ -1132,15 +1304,23 @@
 				555402DC1F13B9EF00570A2E /* zlib.h in Headers */,
 				760A974D1FD8314C00AD182B /* fast_trigonometry.hpp in Headers */,
 				76F1FB001FDA806200976D2B /* Camera.h in Headers */,
+				76DA9C731FDD71B7002E14BA /* matrix4x4.h in Headers */,
+				76DA9C911FDD71B7002E14BA /* vector2.h in Headers */,
 				760A976B1FD8314C00AD182B /* scalar_multiplication.hpp in Headers */,
 				760A97471FD8314C00AD182B /* dual_quaternion.hpp in Headers */,
 				555402CA1F13B9EE00570A2E /* pnglibconf.h in Headers */,
+				76DA9C9B1FDD7203002E14BA /* config.h in Headers */,
 				55238B621F151DDF0063F89B /* GLTexture.h in Headers */,
+				76DA9C971FDD71B7002E14BA /* color4.h in Headers */,
+				76DA9C771FDD71B7002E14BA /* DefaultIOStream.h in Headers */,
+				76DA9C801FDD71B7002E14BA /* LogStream.hpp in Headers */,
 				55EDBE8F1EEBD61B00850B69 /* GLCore.h in Headers */,
 				760A97461FD8314C00AD182B /* component_wise.hpp in Headers */,
 				760A97841FD8314C00AD182B /* exponential.h in Headers */,
 				760A97601FD8314C00AD182B /* number_precision.hpp in Headers */,
+				76DA9C3E1FDD6D00002E14BA /* Model.h in Headers */,
 				760A97031FD8314C00AD182B /* _swizzle.hpp in Headers */,
+				76DA9C831FDD71B7002E14BA /* camera.h in Headers */,
 				760A970D1FD8314C00AD182B /* func_trigonometric.hpp in Headers */,
 				760A97301FD8314C00AD182B /* matrix_access.hpp in Headers */,
 				760A97071FD8314C00AD182B /* func_common.hpp in Headers */,
@@ -1151,6 +1331,7 @@
 				760A975F1FD8314C00AD182B /* normalize_dot.hpp in Headers */,
 				760A97781FD8314C00AD182B /* mat2x2.hpp in Headers */,
 				760A97091FD8314C00AD182B /* func_geometric.hpp in Headers */,
+				76DA9C8E1FDD71B7002E14BA /* cexport.h in Headers */,
 				55EDBE831EEBD5D100850B69 /* glfw3native.h in Headers */,
 				558996911EF559CA00D39E9C /* GLSphere.h in Headers */,
 				760A97211FD8314C00AD182B /* type_vec1.hpp in Headers */,
@@ -1161,10 +1342,12 @@
 				760A973B1FD8314C00AD182B /* type_precision.hpp in Headers */,
 				760A977C1FD8314C00AD182B /* mat3x3.hpp in Headers */,
 				55CDC90C1EFF97800009C6F4 /* GLTrefoilKnot.h in Headers */,
+				76DA9C8B1FDD71B7002E14BA /* poppack1.h in Headers */,
 				760A976A1FD8314C00AD182B /* rotate_vector.hpp in Headers */,
 				760A97121FD8314C00AD182B /* type_float.hpp in Headers */,
 				760A97241FD8314C00AD182B /* type_vec4.hpp in Headers */,
 				760A974B1FD8314C00AD182B /* fast_exponential.hpp in Headers */,
+				76DA9C761FDD71B7002E14BA /* Importer.hpp in Headers */,
 				760A97201FD8314C00AD182B /* type_vec.hpp in Headers */,
 				760A97251FD8314C00AD182B /* exponential.hpp in Headers */,
 				760A976C1FD8314C00AD182B /* scalar_relational.hpp in Headers */,
@@ -1175,6 +1358,7 @@
 				760A971A1FD8314C00AD182B /* type_mat3x2.hpp in Headers */,
 				760A973D1FD8314C00AD182B /* ulp.hpp in Headers */,
 				760A973E1FD8314C00AD182B /* vec1.hpp in Headers */,
+				76DA9C921FDD71B7002E14BA /* version.h in Headers */,
 				760A977B1FD8314C00AD182B /* mat3x2.hpp in Headers */,
 				760A97501FD8314C00AD182B /* hash.hpp in Headers */,
 				760A973A1FD8314C00AD182B /* type_aligned.hpp in Headers */,
@@ -1183,6 +1367,7 @@
 				760A970A1FD8314C00AD182B /* func_integer.hpp in Headers */,
 				760A972D1FD8314C00AD182B /* epsilon.hpp in Headers */,
 				760A978B1FD8314C00AD182B /* vector_relational.h in Headers */,
+				76DA9C841FDD71B7002E14BA /* cfileio.h in Headers */,
 				55CDC90A1EFF97800009C6F4 /* GLTorus.h in Headers */,
 				760A97281FD8314C00AD182B /* geometric.hpp in Headers */,
 				760A97311FD8314C00AD182B /* matrix_integer.hpp in Headers */,
@@ -1197,6 +1382,7 @@
 				760A97111FD8314C00AD182B /* setup.hpp in Headers */,
 				760A974A1FD8314C00AD182B /* extended_min_max.hpp in Headers */,
 				760A97141FD8314C00AD182B /* type_half.hpp in Headers */,
+				76DA9C901FDD71B7002E14BA /* NullLogger.hpp in Headers */,
 				760A97291FD8314C00AD182B /* glm.hpp in Headers */,
 				55EDBE741EEBD5D100850B69 /* GLAttribute.h in Headers */,
 				760A97631FD8314C00AD182B /* perpendicular.hpp in Headers */,
@@ -1204,12 +1390,16 @@
 				760A96FF1FD8314C00AD182B /* common.hpp in Headers */,
 				760A971C1FD8314C00AD182B /* type_mat3x4.hpp in Headers */,
 				55CDC9081EFF97800009C6F4 /* GLMobiusStrip.h in Headers */,
+				76DA9C781FDD71B7002E14BA /* importerdesc.h in Headers */,
 				760A978F1FD8314C00AD182B /* vec4.hpp in Headers */,
 				760A97481FD8314C00AD182B /* euler_angles.hpp in Headers */,
+				76DA9C721FDD71B7002E14BA /* DefaultLogger.hpp in Headers */,
 				55EDBE7B1EEBD5D100850B69 /* GLShader.h in Headers */,
 				559C24A31EED840D005B7599 /* GLCone.h in Headers */,
 				55EDBE8D1EEBD5D100850B69 /* Path.h in Headers */,
 				760A97651FD8314C00AD182B /* projection.hpp in Headers */,
+				76DA9C961FDD71B7002E14BA /* anim.h in Headers */,
+				76DA9C7C1FDD71B7002E14BA /* SceneCombiner.h in Headers */,
 				556903671F2328D80004B8BE /* GLCube.h in Headers */,
 				760A97821FD8314C00AD182B /* packing.hpp in Headers */,
 				760A970E1FD8314C00AD182B /* func_vector_relational.hpp in Headers */,
@@ -1218,34 +1408,44 @@
 				760A972B1FD8314C00AD182B /* color_space.hpp in Headers */,
 				5589968D1EF556F200D39E9C /* GLInterval.h in Headers */,
 				760A97351FD8314C00AD182B /* packing.hpp in Headers */,
+				76DA9C811FDD71B7002E14BA /* matrix3x3.h in Headers */,
 				760A97831FD8314C00AD182B /* common.h in Headers */,
 				760A97811FD8314C00AD182B /* matrix.hpp in Headers */,
 				55EDBE791EEBD5D100850B69 /* GLProgram.h in Headers */,
 				760A97231FD8314C00AD182B /* type_vec3.hpp in Headers */,
 				760A97701FD8314C00AD182B /* transform.hpp in Headers */,
 				55238B3D1F1510140063F89B /* jconfig.h in Headers */,
+				76DA9C851FDD71B7002E14BA /* metadata.h in Headers */,
 				559C249F1EED83D9005B7599 /* GLSurface.h in Headers */,
 				760A97391FD8314C00AD182B /* round.hpp in Headers */,
+				76DA9C891FDD71B7002E14BA /* defs.h in Headers */,
 				760A97151FD8314C00AD182B /* type_int.hpp in Headers */,
 				760A97271FD8314C00AD182B /* fwd.hpp in Headers */,
 				760A97331FD8314C00AD182B /* matrix_transform.hpp in Headers */,
 				760A97321FD8314C00AD182B /* matrix_inverse.hpp in Headers */,
 				760A973F1FD8314C00AD182B /* associated_min_max.hpp in Headers */,
+				76DA9C791FDD71B7002E14BA /* quaternion.h in Headers */,
 				55EDBE821EEBD5D100850B69 /* glfw3.h in Headers */,
+				76DA9C8F1FDD71B7002E14BA /* material.h in Headers */,
 				55238B3E1F1510140063F89B /* jmorecfg.h in Headers */,
+				76DA9C861FDD71B7002E14BA /* Exporter.hpp in Headers */,
 				760A974C1FD8314C00AD182B /* fast_square_root.hpp in Headers */,
 				760A978D1FD8314C00AD182B /* vec2.hpp in Headers */,
 				760A97401FD8314C00AD182B /* bit.hpp in Headers */,
 				760A97131FD8314C00AD182B /* type_gentype.hpp in Headers */,
+				76DA9C7D1FDD71B7002E14BA /* IOStream.hpp in Headers */,
 				555402DB1F13B9EF00570A2E /* zconf.h in Headers */,
 				760A97681FD8314C00AD182B /* raw_data.hpp in Headers */,
 				760A970B1FD8314C00AD182B /* func_matrix.hpp in Headers */,
 				760A97671FD8314C00AD182B /* range.hpp in Headers */,
+				76DA9C7B1FDD71B7002E14BA /* light.h in Headers */,
+				76DA9C991FDD71B7002E14BA /* cimport.h in Headers */,
 				760A97851FD8314C00AD182B /* geometric.h in Headers */,
 				760A97901FD8314C00AD182B /* vector_relational.hpp in Headers */,
 				760A97221FD8314C00AD182B /* type_vec2.hpp in Headers */,
 				760A97361FD8314C00AD182B /* quaternion.hpp in Headers */,
 				760A97371FD8314C00AD182B /* random.hpp in Headers */,
+				76DA9C8C1FDD71B7002E14BA /* pstdint.h in Headers */,
 				760A978C1FD8314C00AD182B /* trigonometric.hpp in Headers */,
 				760A97551FD8314C00AD182B /* matrix_cross_product.hpp in Headers */,
 				760A975B1FD8314C00AD182B /* matrix_transform_2d.hpp in Headers */,
@@ -1253,10 +1453,16 @@
 				760A97791FD8314C00AD182B /* mat2x3.hpp in Headers */,
 				760A97421FD8314C00AD182B /* color_space.hpp in Headers */,
 				760A972C1FD8314C00AD182B /* constants.hpp in Headers */,
+				76DA9C871FDD71B7002E14BA /* vector3.h in Headers */,
+				76DA9C8D1FDD71B7002E14BA /* pushpack1.h in Headers */,
 				760A976F1FD8314C00AD182B /* string_cast.hpp in Headers */,
+				76DA9C8A1FDD71B7002E14BA /* mesh.h in Headers */,
+				76DA9C931FDD71B7002E14BA /* postprocess.h in Headers */,
+				76DA9C881FDD71B7002E14BA /* texture.h in Headers */,
 				760A97581FD8314C00AD182B /* matrix_major_storage.hpp in Headers */,
 				760A975C1FD8314C00AD182B /* mixed_product.hpp in Headers */,
 				55EDBE771EEBD5D100850B69 /* GLGL.h in Headers */,
+				76DA9C3C1FDD6CAC002E14BA /* Mesh.h in Headers */,
 				760A974F1FD8314C00AD182B /* handed_coordinate_space.hpp in Headers */,
 				760A97411FD8314C00AD182B /* closest_point.hpp in Headers */,
 				760A97381FD8314C00AD182B /* reciprocal.hpp in Headers */,

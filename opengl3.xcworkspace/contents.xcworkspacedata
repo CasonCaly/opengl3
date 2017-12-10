@@ -2,6 +2,39 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ModelLoading/ModelLoading.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MultipleLights/MultipleLights.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LightCastersSpotSoft/LightCastersSpotSoft.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LightCastersSpot/LightCastersSpot.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LightCastersPoint/LightCastersPoint.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LightCastersDirectional/LightCastersDirectional.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LightingMapsSpecular/LightingMapsSpecular.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LightingMapsDiffuse/LightingMapsDiffuse.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Materials/Materials.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicLightingSpecular/BasicLightingSpecular.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BasicLightingDiffuse/BasicLightingDiffuse.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Colors/Colors.xcodeproj">
    </FileRef>
    <FileRef

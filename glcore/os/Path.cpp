@@ -58,7 +58,12 @@ string Path::resouceDir(){
 }
 
 string Path::joinResource(const string& subPath){
+    
     string path = Path::resouceDir();
+    if(subPath.find(path) == 0)
+    {
+        return subPath;
+    }
     path.append("/");
     path.append(subPath);
     return path;
