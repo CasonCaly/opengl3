@@ -22,6 +22,9 @@ using namespace std;
 #include "GLShader.h"
 #include "GLUniform.h"
 #include "GLAttribute.h"
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/type_ptr.hpp"
 
 class GLCORE GLProgram{
     
@@ -46,6 +49,12 @@ public:
     GLUniform* getUniform(const std::string& name);
     
     GLAttribute* getAttribute(const std::string& name);
+    
+    void setInt(const std::string& name, int value);
+    
+    void setMat4(const std::string& name, const glm::mat4& value);
+    
+    void setVec3(const std::string& name, const glm::vec3& value);
     
 protected:
     

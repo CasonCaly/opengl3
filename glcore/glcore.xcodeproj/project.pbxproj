@@ -212,6 +212,10 @@
 		760A978E1FD8314C00AD182B /* vec3.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 760A96FC1FD8314C00AD182B /* vec3.hpp */; };
 		760A978F1FD8314C00AD182B /* vec4.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 760A96FD1FD8314C00AD182B /* vec4.hpp */; };
 		760A97901FD8314C00AD182B /* vector_relational.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 760A96FE1FD8314C00AD182B /* vector_relational.hpp */; };
+		76834FF91FE41AAF00A74F3F /* GLFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76834FF71FE41AAF00A74F3F /* GLFrameBuffer.cpp */; };
+		76834FFA1FE41AAF00A74F3F /* GLFrameBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 76834FF81FE41AAF00A74F3F /* GLFrameBuffer.h */; };
+		76834FFD1FE5467400A74F3F /* GLRenderBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 76834FFB1FE5467300A74F3F /* GLRenderBuffer.h */; };
+		76834FFE1FE5467400A74F3F /* GLRenderBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76834FFC1FE5467400A74F3F /* GLRenderBuffer.cpp */; };
 		76DA9C3C1FDD6CAC002E14BA /* Mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C3A1FDD6CAC002E14BA /* Mesh.h */; };
 		76DA9C3E1FDD6D00002E14BA /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C3D1FDD6D00002E14BA /* Model.h */; };
 		76DA9C721FDD71B7002E14BA /* DefaultLogger.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 76DA9C401FDD71B4002E14BA /* DefaultLogger.hpp */; };
@@ -579,6 +583,10 @@
 		760A96FC1FD8314C00AD182B /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
 		760A96FD1FD8314C00AD182B /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		760A96FE1FD8314C00AD182B /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
+		76834FF71FE41AAF00A74F3F /* GLFrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLFrameBuffer.cpp; sourceTree = "<group>"; };
+		76834FF81FE41AAF00A74F3F /* GLFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrameBuffer.h; sourceTree = "<group>"; };
+		76834FFB1FE5467300A74F3F /* GLRenderBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLRenderBuffer.h; sourceTree = "<group>"; };
+		76834FFC1FE5467400A74F3F /* GLRenderBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLRenderBuffer.cpp; sourceTree = "<group>"; };
 		76DA9C3A1FDD6CAC002E14BA /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
 		76DA9C3D1FDD6D00002E14BA /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		76DA9C3F1FDD71B4002E14BA /* color4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color4.inl; sourceTree = "<group>"; };
@@ -788,6 +796,10 @@
 		55EDBE461EEBD5D100850B69 /* glclass */ = {
 			isa = PBXGroup;
 			children = (
+				76834FFC1FE5467400A74F3F /* GLRenderBuffer.cpp */,
+				76834FFB1FE5467300A74F3F /* GLRenderBuffer.h */,
+				76834FF71FE41AAF00A74F3F /* GLFrameBuffer.cpp */,
+				76834FF81FE41AAF00A74F3F /* GLFrameBuffer.h */,
 				76EF892A1FD69C89002E2D52 /* GLVertexArray.cpp */,
 				76EF89291FD69C89002E2D52 /* GLVertexArray.h */,
 				55238B5F1F151DDF0063F89B /* GLTexture.cpp */,
@@ -1417,6 +1429,7 @@
 				55238B3D1F1510140063F89B /* jconfig.h in Headers */,
 				76DA9C851FDD71B7002E14BA /* metadata.h in Headers */,
 				559C249F1EED83D9005B7599 /* GLSurface.h in Headers */,
+				76834FFD1FE5467400A74F3F /* GLRenderBuffer.h in Headers */,
 				760A97391FD8314C00AD182B /* round.hpp in Headers */,
 				76DA9C891FDD71B7002E14BA /* defs.h in Headers */,
 				760A97151FD8314C00AD182B /* type_int.hpp in Headers */,
@@ -1450,6 +1463,7 @@
 				760A97551FD8314C00AD182B /* matrix_cross_product.hpp in Headers */,
 				760A975B1FD8314C00AD182B /* matrix_transform_2d.hpp in Headers */,
 				760A977F1FD8314C00AD182B /* mat4x3.hpp in Headers */,
+				76834FFA1FE41AAF00A74F3F /* GLFrameBuffer.h in Headers */,
 				760A97791FD8314C00AD182B /* mat2x3.hpp in Headers */,
 				760A97421FD8314C00AD182B /* color_space.hpp in Headers */,
 				760A972C1FD8314C00AD182B /* constants.hpp in Headers */,
@@ -1552,6 +1566,8 @@
 				55EDBE8C1EEBD5D100850B69 /* Path.cpp in Sources */,
 				55EDBE7C1EEBD5D100850B69 /* GLUniform.cpp in Sources */,
 				558996901EF559CA00D39E9C /* GLSphere.cpp in Sources */,
+				76834FFE1FE5467400A74F3F /* GLRenderBuffer.cpp in Sources */,
+				76834FF91FE41AAF00A74F3F /* GLFrameBuffer.cpp in Sources */,
 				55EDBE751EEBD5D100850B69 /* GLBuffer.cpp in Sources */,
 				55EDBE731EEBD5D100850B69 /* GLAttribute.cpp in Sources */,
 			);

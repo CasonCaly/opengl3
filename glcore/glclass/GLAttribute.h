@@ -29,6 +29,8 @@ public:
     
     void enableVertexAttribArray();
     
+    void enableVertexAttribArray(GLuint attribute);
+    
     void disableVertexAttribArray();
     
     void vertexAttribPointer(GLint size, GLenum type, GLboolean normalized, GLsizei stride, const GLvoid *pointer);

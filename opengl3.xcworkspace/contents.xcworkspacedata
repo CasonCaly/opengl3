@@ -2,6 +2,30 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AntiAliasingPostProcessing/AntiAliasingPostProcessing.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Asteroids/Asteroids.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:InstancingQuads/InstancingQuads.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CubemapsSkybox/CubemapsSkybox.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:FrameBuffers/FrameBuffers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BlendSort/BlendSort.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:StencilTesting/StencilTesting.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DepthTesing/DepthTesing.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:ModelLoading/ModelLoading.xcodeproj">
    </FileRef>
    <FileRef

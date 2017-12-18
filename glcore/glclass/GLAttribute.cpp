@@ -24,6 +24,12 @@ void GLAttribute::init(GLuint attribute)
     m_attribute = attribute;
 }
 
+void GLAttribute::enableVertexAttribArray(GLuint attribute)
+{
+    m_attribute = attribute;
+    glEnableVertexAttribArray(m_attribute);
+}
+
 void GLAttribute::enableVertexAttribArray(){
     glEnableVertexAttribArray(m_attribute);
 }

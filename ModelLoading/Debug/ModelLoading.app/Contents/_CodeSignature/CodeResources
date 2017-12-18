@@ -111,10 +111,19 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			oqm8HaJWVSw1I8S88nn7rpLilCc=
+			SJ5vwqvpGThTVZLDLQv1rzeGin8=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"a2a9bc1da256552c3523c4bcf279fbae92e29427"</string>
+			<string>cdhash H"489e6fc2abe91938535592c32d0bf5af37868a7f"</string>
+		</dict>
+		<key>MacOS/libassimp.4.1.0.dylib</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			bhQ/Hcq/k94lqC8gxnBF9oGnZEE=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"6e143f1dcabf93de25a82f20c67045f681a76441"</string>
 		</dict>
 		<key>Resources/Shaders/ModelLoading.frag</key>
 		<dict>

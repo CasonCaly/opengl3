@@ -15,8 +15,8 @@
 		5599F0011E6B056D00B26057 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5599F0001E6B056D00B26057 /* QuartzCore.framework */; };
 		5599F0051E6B05E300B26057 /* Shaders in Resources */ = {isa = PBXBuildFile; fileRef = 5599F0041E6B05E300B26057 /* Shaders */; };
 		55EDBEA01EEBDC6900850B69 /* glcore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55EDBE9F1EEBDC6900850B69 /* glcore.dylib */; };
+		76390A241FE3D46B00B5FD7A /* libassimp.4.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76390A231FE3D46B00B5FD7A /* libassimp.4.1.0.dylib */; };
 		769878AB1FD788DA00E31F74 /* ModelLoading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769878A91FD788DA00E31F74 /* ModelLoading.cpp */; };
-		76DA9C9D1FDD72AA002E14BA /* libassimp.4.0.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 76DA9C9C1FDD72AA002E14BA /* libassimp.4.0.1.dylib */; };
 		76DA9C9F1FDD7364002E14BA /* nanosuit in Resources */ = {isa = PBXBuildFile; fileRef = 76DA9C9E1FDD7364002E14BA /* nanosuit */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +30,9 @@
 		5599F0001E6B056D00B26057 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5599F0041E6B05E300B26057 /* Shaders */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Shaders; sourceTree = "<group>"; };
 		55EDBE9F1EEBDC6900850B69 /* glcore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = glcore.dylib; path = ../glcore/Debug/glcore.dylib; sourceTree = "<group>"; };
+		76390A231FE3D46B00B5FD7A /* libassimp.4.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.4.1.0.dylib; path = ../glcore/Debug/libassimp.4.1.0.dylib; sourceTree = "<group>"; };
 		769878A91FD788DA00E31F74 /* ModelLoading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ModelLoading.cpp; sourceTree = "<group>"; };
 		769878AA1FD788DA00E31F74 /* ModelLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelLoading.h; sourceTree = "<group>"; };
-		76DA9C9C1FDD72AA002E14BA /* libassimp.4.0.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.4.0.1.dylib; path = ../glcore/assimp/prebuilt/libassimp.4.0.1.dylib; sourceTree = "<group>"; };
 		76DA9C9E1FDD7364002E14BA /* nanosuit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nanosuit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DA9C9D1FDD72AA002E14BA /* libassimp.4.0.1.dylib in Frameworks */,
+				76390A241FE3D46B00B5FD7A /* libassimp.4.1.0.dylib in Frameworks */,
 				55EDBEA01EEBDC6900850B69 /* glcore.dylib in Frameworks */,
 				5599F0011E6B056D00B26057 /* QuartzCore.framework in Frameworks */,
 				5599EFFF1E6B055C00B26057 /* AppKit.framework in Frameworks */,
@@ -86,7 +86,7 @@
 		5599EFF71E6B052C00B26057 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76DA9C9C1FDD72AA002E14BA /* libassimp.4.0.1.dylib */,
+				76390A231FE3D46B00B5FD7A /* libassimp.4.1.0.dylib */,
 				55EDBE9F1EEBDC6900850B69 /* glcore.dylib */,
 				5599F0001E6B056D00B26057 /* QuartzCore.framework */,
 				5599EFFE1E6B055C00B26057 /* AppKit.framework */,
@@ -175,7 +175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp ${PROJECT_DIR}/../glcore/Debug/glcore.dylib ${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.app/Contents/MacOS";
+			shellScript = "cp ${PROJECT_DIR}/../glcore/Debug/glcore.dylib ${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.app/Contents/MacOS\ncp ${PROJECT_DIR}/../glcore/Debug/libassimp.4.1.0.dylib ${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.app/Contents/MacOS";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -294,6 +294,7 @@
 					"$(PROJECT_DIR)/../glcore/Debug",
 					"$(PROJECT_DIR)/../glcore/assimp/prebuilt",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MultipleLights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -314,6 +315,7 @@
 					"$(PROJECT_DIR)/../glcore/Release",
 					"$(PROJECT_DIR)/../glcore/assimp/prebuilt",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MultipleLights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -202,6 +202,7 @@ void GLApp::initGLApp(const std::string& appName, int width, int height)
 #if defined(WIN32)
     ::initGlew();
 #endif
+    glfwGetFramebufferSize(g_window, &m_widthInPixel, &m_heightInPixel);
     //glfwGetFramebufferSize(g_window, &m_width, &m_height);
     this->initProgram();
 
@@ -219,7 +220,6 @@ void GLApp::run()
     {
         
 		/* Render here */
-		glClear(GL_COLOR_BUFFER_BIT);
 		this->render();
 		/* Swap front and back buffers */
 		glfwSwapBuffers(g_window);

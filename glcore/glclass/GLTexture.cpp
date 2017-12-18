@@ -1,23 +1,6 @@
 #include "GLTexture.h"
 #include "image/GLImage.h"
 
-//typedef Texture2D::PixelFormatInfoMap::value_type PixelFormatInfoMapValue;
-//static const PixelFormatInfoMapValue TexturePixelFormatInfoTablesValue[] =
-//{
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::BGRA8888, Texture2D::PixelFormatInfo(GL_BGRA, GL_BGRA, GL_UNSIGNED_BYTE, 32, false, true)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::RGBA8888, Texture2D::PixelFormatInfo(GL_RGBA, GL_RGBA, GL_UNSIGNED_BYTE, 32, false, true)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::RGBA4444, Texture2D::PixelFormatInfo(GL_RGBA, GL_RGBA, GL_UNSIGNED_SHORT_4_4_4_4, 16, false, true)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::RGB5A1, Texture2D::PixelFormatInfo(GL_RGBA, GL_RGBA, GL_UNSIGNED_SHORT_5_5_5_1, 16, false, true)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::RGB565, Texture2D::PixelFormatInfo(GL_RGB, GL_RGB, GL_UNSIGNED_SHORT_5_6_5, 16, false, false)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::RGB888, Texture2D::PixelFormatInfo(GL_RGB, GL_RGB, GL_UNSIGNED_BYTE, 24, false, false)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::A8, Texture2D::PixelFormatInfo(GL_ALPHA, GL_ALPHA, GL_UNSIGNED_BYTE, 8, false, false)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::I8, Texture2D::PixelFormatInfo(GL_LUMINANCE, GL_LUMINANCE, GL_UNSIGNED_BYTE, 8, false, false)),
-//    PixelFormatInfoMapValue(Texture2D::PixelFormat::AI88, Texture2D::PixelFormatInfo(GL_LUMINANCE_ALPHA, GL_LUMINANCE_ALPHA, GL_UNSIGNED_BYTE, 16, false, true)),
-//    
-//
-//};
-//}
-
 void GLTexture::initWithImage(const std::string& path)
 {
     GLImage image;
@@ -47,11 +30,11 @@ void GLTexture::initWithImage(const std::string& path)
         param = 1;
     }
 
-    //glPixelStorei(GL_UNPACK_ALIGNMENT, param);
+    glPixelStorei(GL_UNPACK_ALIGNMENT, param);
     this->genTextures();
     this->bindTexture(GL_TEXTURE_2D);
-//    this->texParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-//    this->texParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    this->texParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    this->texParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     
     this->texImage2D(GL_TEXTURE_2D,
@@ -65,6 +48,57 @@ void GLTexture::initWithImage(const std::string& path)
                           image.getData());
 }
 
+void GLTexture::initWithCubemap(std::vector< std::string >& cubemap)
+{
+    this->genTextures();
+    this->bindTexture(GL_TEXTURE_CUBE_MAP);
+    for(int i = 0; i < cubemap.size(); i++)
+    {
+        GLImage image;
+        image.initWithImage(cubemap[i]);
+        GLint param = 4;
+        size_t bytePerPix = 4;
+        if(image.getInternalFormat() == GL_RGB){
+            bytePerPix = 3;
+        }
+        
+        size_t width = image.getWidth();
+        size_t bytesPerRow = width * bytePerPix / 8;
+        if(bytesPerRow % 8 == 0)
+        {
+            param = 8;
+        }
+        else if(bytesPerRow % 4 == 0)
+        {
+            param = 4;
+        }
+        else if(bytesPerRow % 2 == 0)
+        {
+            param = 2;
+        }
+        else
+        {
+            param = 1;
+        }
+        
+        glPixelStorei(GL_UNPACK_ALIGNMENT, param);
+        this->texImage2D(GL_TEXTURE_CUBE_MAP_POSITIVE_X + i,
+                         0,
+                         image.getInternalFormat(),
+                         (GLsizei)image.getWidth(),
+                         (GLsizei)image.getHeight(),
+                         0,
+                         image.getInternalFormat(),
+                         GL_UNSIGNED_BYTE,
+                         image.getData());
+    }
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_CUBE_MAP, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+}
+
 void GLTexture::activeTexture(GLenum texture)
 {
 	glActiveTexture(texture);
@@ -72,28 +106,81 @@ void GLTexture::activeTexture(GLenum texture)
 
 void GLTexture::generateMipmap(GLenum target)
 {
+    m_target = target;
 	glGenerateMipmap(target);
 }
 
-void GLTexture::genTextures(){
+void GLTexture::genTextures()
+{
 	glGenTextures(1, &m_textures);
 }
 
-void GLTexture::bindTexture(GLenum target){
+void GLTexture::genTextures(GLenum target)
+{
+    m_target = target;
+    glGenTextures(1, &m_textures);
+}
+
+void GLTexture::bindTexture(GLenum target)
+{
+    m_target = target;
 	glBindTexture(target, m_textures);
 }
 
 void GLTexture::texParameteri(GLenum target, GLenum pname, GLint param)
 {
+    m_target = target;
 	glTexParameteri(target, pname, param);
 }
 
 void GLTexture::texImage2D(GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *pixels)
 {
+    m_target = target;
 	glTexImage2D(target, level, internalformat, width, height, border, format, type, pixels);
+}
+
+void GLTexture::texImage2DMultisample(GLenum target, GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
+{
+    m_target = target;
+    glTexImage2DMultisample(target, samples, internalformat, width, height, fixedsamplelocations);
+}
+
+void GLTexture::bindTexture()
+{
+    glBindTexture(m_target, m_textures);
+}
+
+void GLTexture::generateMipmap()
+{
+    glGenerateMipmap(m_target);
+}
+
+void GLTexture::texParameteri(GLenum pname, GLint param)
+{
+    glTexParameteri(m_target, pname, param);
+}
+
+void GLTexture::texImage2D(GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid *pixels)
+{
+    glTexImage2D(m_target, level, internalformat, width, height, border, format, type, pixels);
+}
+
+void GLTexture::texImage2DMultisample(GLsizei samples, GLint internalformat, GLsizei width, GLsizei height, GLboolean fixedsamplelocations)
+{
+    glTexImage2DMultisample(m_target, samples, internalformat, width, height, fixedsamplelocations);
 }
 
 GLuint GLTexture::getTexture()
 {
     return m_textures;
+}
+
+GLenum GLTexture::getTarget()
+{
+    return m_target;
+}
+
+void GLTexture::unbind()
+{
+    glBindTexture(m_target, 0);
 }

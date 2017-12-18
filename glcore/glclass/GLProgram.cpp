@@ -72,3 +72,25 @@ GLAttribute* GLProgram::getAttribute(const std::string& name){
     m_attribute.insert(make_pair(name, glAttribute));
     return glAttribute;
 }
+
+void GLProgram::setInt(const std::string& name, int value)
+{
+    GLUniform* uniform = this->getUniform(name);
+    if(uniform)
+        uniform->value1i(value);
+}
+
+void GLProgram::setMat4(const std::string& name, const glm::mat4& value)
+{
+    GLUniform* uniform = this->getUniform(name);
+    if(uniform)
+        uniform->matrix4fv(1, GL_FALSE, glm::value_ptr(value));
+}
+
+void GLProgram::setVec3(const std::string& name, const glm::vec3& value)
+{
+    GLUniform* uniform = this->getUniform(name);
+    if(uniform)
+        uniform->vector3fv(1, glm::value_ptr(value));
+}
+

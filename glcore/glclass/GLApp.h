@@ -61,6 +61,8 @@ protected:
 protected:
     int m_width;
     int m_height;
+    int m_widthInPixel;
+    int m_heightInPixel;
     GLProgram m_glProgram;
 };
 
