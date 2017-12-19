@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = MultipleLights;
-			productName = HelloArrow;
+			productName = MultipleLights;
 			productReference = 5599EFDD1E6B03C200B26057 /* MultipleLights.app */;
 			productType = "com.apple.product-type.application";
 		};

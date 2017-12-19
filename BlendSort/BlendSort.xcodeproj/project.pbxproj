@@ -120,7 +120,7 @@
 			dependencies = (
 			);
 			name = BlendSort;
-			productName = HelloArrow;
+			productName = BlendSort;
 			productReference = 5599EFDD1E6B03C200B26057 /* BlendSort.app */;
 			productType = "com.apple.product-type.application";
 		};

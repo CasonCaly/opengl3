@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = LightingMapsDiffuse;
-			productName = HelloArrow;
+			productName = LightingMapsDiffuse;
 			productReference = 5599EFDD1E6B03C200B26057 /* LightingMapsDiffuse.app */;
 			productType = "com.apple.product-type.application";
 		};

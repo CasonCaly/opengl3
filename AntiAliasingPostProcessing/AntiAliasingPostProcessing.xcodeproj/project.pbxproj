@@ -111,7 +111,7 @@
 			dependencies = (
 			);
 			name = AntiAliasingPostProcessing;
-			productName = HelloArrow;
+			productName = AntiAliasingPostProcessing;
 			productReference = 5599EFDD1E6B03C200B26057 /* AntiAliasingPostProcessing.app */;
 			productType = "com.apple.product-type.application";
 		};

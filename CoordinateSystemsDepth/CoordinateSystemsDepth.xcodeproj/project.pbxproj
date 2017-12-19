@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = CoordinateSystemsDepth;
-			productName = HelloArrow;
+			productName = CoordinateSystemsDepth;
 			productReference = 5599EFDD1E6B03C200B26057 /* CoordinateSystemsDepth.app */;
 			productType = "com.apple.product-type.application";
 		};

@@ -117,7 +117,7 @@
 			dependencies = (
 			);
 			name = StencilTesting;
-			productName = HelloArrow;
+			productName = StencilTesting;
 			productReference = 5599EFDD1E6B03C200B26057 /* StencilTesting.app */;
 			productType = "com.apple.product-type.application";
 		};

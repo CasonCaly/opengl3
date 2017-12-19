@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = CoordinateSystems;
-			productName = HelloArrow;
+			productName = CoordinateSystems;
 			productReference = 5599EFDD1E6B03C200B26057 /* CoordinateSystems.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -291,7 +291,7 @@
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../glcore/Debug";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyi.aft2.yd.appstore.HelloArrow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoordinateSystems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -308,7 +308,7 @@
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../glcore/Release";
-				PRODUCT_BUNDLE_IDENTIFIER = com.boyi.aft2.yd.appstore.HelloArrow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CoordinateSystems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

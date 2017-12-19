@@ -107,7 +107,7 @@
 			dependencies = (
 			);
 			name = Materials;
-			productName = HelloArrow;
+			productName = Materials;
 			productReference = 5599EFDD1E6B03C200B26057 /* Materials.app */;
 			productType = "com.apple.product-type.application";
 		};

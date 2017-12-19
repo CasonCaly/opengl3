@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = LightCastersDirectional;
-			productName = HelloArrow;
+			productName = LightCastersDirectional;
 			productReference = 5599EFDD1E6B03C200B26057 /* LightCastersDirectional.app */;
 			productType = "com.apple.product-type.application";
 		};

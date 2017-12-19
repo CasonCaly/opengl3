@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = CameraKeyboardDt;
-			productName = HelloArrow;
+			productName = CameraKeyboardDt;
 			productReference = 5599EFDD1E6B03C200B26057 /* CameraKeyboardDt.app */;
 			productType = "com.apple.product-type.application";
 		};

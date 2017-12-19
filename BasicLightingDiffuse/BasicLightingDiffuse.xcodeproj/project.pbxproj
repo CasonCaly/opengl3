@@ -107,7 +107,7 @@
 			dependencies = (
 			);
 			name = BasicLightingDiffuse;
-			productName = HelloArrow;
+			productName = BasicLightingDiffuse;
 			productReference = 5599EFDD1E6B03C200B26057 /* BasicLightingDiffuse.app */;
 			productType = "com.apple.product-type.application";
 		};

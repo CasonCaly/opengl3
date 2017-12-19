@@ -1,6 +1,6 @@
 //
 //  GLAttribute.cpp
-//  HelloArrow
+//  GLAttribute
 //
 //  Created by zhuang yusong on 2017/3/5.
 //  Copyright © 2017年 zhuang yusong. All rights reserved.

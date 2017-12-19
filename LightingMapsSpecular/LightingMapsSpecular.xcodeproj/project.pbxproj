@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = LightingMapsSpecular;
-			productName = HelloArrow;
+			productName = LightingMapsSpecular;
 			productReference = 5599EFDD1E6B03C200B26057 /* LightingMapsSpecular.app */;
 			productType = "com.apple.product-type.application";
 		};

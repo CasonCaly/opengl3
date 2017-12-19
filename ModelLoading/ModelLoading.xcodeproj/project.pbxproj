@@ -114,7 +114,7 @@
 			dependencies = (
 			);
 			name = ModelLoading;
-			productName = HelloArrow;
+			productName = ModelLoading;
 			productReference = 5599EFDD1E6B03C200B26057 /* ModelLoading.app */;
 			productType = "com.apple.product-type.application";
 		};

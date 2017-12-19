@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = CameraMouseZoom;
-			productName = HelloArrow;
+			productName = CameraMouseZoom;
 			productReference = 5599EFDD1E6B03C200B26057 /* CameraMouseZoom.app */;
 			productType = "com.apple.product-type.application";
 		};

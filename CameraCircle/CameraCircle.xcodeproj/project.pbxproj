@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = CameraCircle;
-			productName = HelloArrow;
+			productName = CameraCircle;
 			productReference = 5599EFDD1E6B03C200B26057 /* CameraCircle.app */;
 			productType = "com.apple.product-type.application";
 		};

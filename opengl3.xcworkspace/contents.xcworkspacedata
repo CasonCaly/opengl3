@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:BlinnPhong/BlinnPhong.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:AntiAliasingPostProcessing/AntiAliasingPostProcessing.xcodeproj">
    </FileRef>
    <FileRef

@@ -117,7 +117,7 @@
 			dependencies = (
 			);
 			name = DepthTesing;
-			productName = HelloArrow;
+			productName = DepthTesing;
 			productReference = 5599EFDD1E6B03C200B26057 /* DepthTesing.app */;
 			productType = "com.apple.product-type.application";
 		};

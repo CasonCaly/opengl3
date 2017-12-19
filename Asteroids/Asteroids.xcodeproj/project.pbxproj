@@ -117,7 +117,7 @@
 			dependencies = (
 			);
 			name = Asteroids;
-			productName = HelloArrow;
+			productName = Asteroids;
 			productReference = 5599EFDD1E6B03C200B26057 /* Asteroids.app */;
 			productType = "com.apple.product-type.application";
 		};

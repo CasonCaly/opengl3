@@ -113,7 +113,7 @@
 			dependencies = (
 			);
 			name = LightCastersSpotSoft;
-			productName = HelloArrow;
+			productName = LightCastersSpotSoft;
 			productReference = 5599EFDD1E6B03C200B26057 /* LightCastersSpotSoft.app */;
 			productType = "com.apple.product-type.application";
 		};
